@@ -1,0 +1,302 @@
+*{
+    margin 0
+    padding 0
+}
+.gridContenedor {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 1fr 1fr 0.2fr; 
+    grid-template-rows: 0.1fr 2.4fr 0.3fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "NavBar NavBar NavBar NavBar NavBar"
+    "Main Main Main Main Main"
+    "Footer Footer Footer Footer Footer"; 
+    background-color: white;
+}
+.NavBar { grid-area: NavBar; }
+.MenuPrincipal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-bottom: 0px;
+    height: 10%;
+    font-size: 18px;
+}
+.padreMenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+.linksMenu{
+    text-decoration: none;
+    color: black;
+    margin-left: 25px;
+}
+.Main {
+    display: grid; 
+    grid-template-columns:0.2fr 1fr 1fr 1fr 0.2fr; 
+    grid-template-rows: 0.2fr 3.5fr 0.2fr 1.8fr; 
+    gap: 0px 5px; 
+    grid-template-areas: 
+    ". . Titulo . ."
+    ". card1 card2 card3 ."
+    ". . Titulo2 . ."
+    ". info1 info2 info3 ."; 
+    grid-area: Main;
+    justify-content: center;
+    background-repeat: repeat-y;
+    background-size: auto;
+}
+.Titulo { grid-area: Titulo; 
+    color: rgb(48, 221, 48);
+    text-align: center;
+    font-size: 20px;
+}
+.card1 { grid-area: card1; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+.imgCard{
+        border-radius: 10px;
+        max-width: 100%;
+} 
+.card2 { 
+    grid-area: card2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card3 { 
+    grid-area: card3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.DescripcionProd{
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.botonConsultar{
+    background-color: blue;
+    border-radius: 5px;
+    color: whitesmoke;
+    font-weight: bold;
+    text-align: center;
+    border: 0px;
+    width: 100px;
+}
+.Titulo2 { 
+    grid-area: Titulo2;
+    color: rgb(48, 221, 48);
+    text-align: center;
+    font-size: 20px;
+}
+.info1 { 
+    grid-area: info1;
+    display: flex;
+    align-items: center;
+    border: solid 2px white;
+    line-height: 1.5;
+    font-weight: bold;
+    color: white;
+    font-family: sans-serif;
+    font-size: 25px;
+    text-align: center;
+    background-image: url(https://cherry-brightspot.s3.amazonaws.com/6f/bf/27e435f74c7e8fe74b52cc4b464f/istock-886004314.jpg);
+    background-size: cover;
+}
+.info2 { 
+    grid-area: info2;
+    display: flex;
+    align-items: center;
+    border: solid 2px white;
+    line-height: 1.5;
+    font-weight: bold;
+    color: white; 
+    font-family: sans-serif;
+    font-size: 25px;
+    text-align: center;
+    background-image: url(https://fotos.perfil.com/2021/02/10/trim/950/534/bitcoins-criptomonedas-20210210-1125945.jpg);
+    background-size: cover;
+}
+.info3 { 
+    grid-area: info3;
+    display: flex;
+    align-items: center;
+    border: solid 2px white;
+    line-height: 1.5;
+    font-weight: bold;
+    color: white;
+    font-family: sans-serif;
+    font-size: 25px;
+    text-align: center;
+    background-image: url(https://pysnnoticias.com/wp-content/uploads/2021/12/Mejores-criptomonedas-para-invertir-a-corto-plazo.jpg);
+    background-size: cover;
+}
+.Footer { 
+    grid-area: Footer;
+    color: black;
+    font-size: 20px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+    background-color: #f4f4f4;
+    border-top: 1px solid rgb(206, 206, 206);
+    border-bottom: 1px solid rgb(206, 206, 206);
+}
+.imgLogo{
+    height: 60px;
+}
+.logoFace{
+    height: 60px;
+}
+.logoInsta{
+    height: 54px;
+    padding-bottom: 2px;
+}
+.menuSecundario{
+    list-style-type: none;
+}
+.subscribite{
+    display: flex;
+    flex-direction: column;
+}
+.ingresarMail{
+    border: 1px solid grey;
+    height: 30px;
+}
+.botonSubs{
+    margin-top: 30px;
+    height: 30px;
+    width: 100px;
+    font-weight: bold;
+    text-align: center;
+    border: 0px;
+    background-color: blue;
+    color:whitesmoke;
+    border-radius: 5px;
+}
+/* SECCION PLACAS */
+.gridContenedorPlacas {  display: grid;
+    grid-template-columns: 0.2fr 1fr 1fr 1fr 0.2fr;
+    grid-template-rows: 0.3fr 2.5fr 0.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "NavBarPlacas NavBarPlacas NavBarPlacas NavBarPlacas NavBarPlacas"
+        "mainPlacas mainPlacas mainPlacas mainPlacas mainPlacas"
+        "footerPlacas footerPlacas footerPlacas footerPlacas footerPlacas";
+}
+.NavBarPlacas { grid-area: NavBarPlacas; }
+.mainPlacas {  display: grid;
+    grid-template-columns: 0.3fr 1.4fr 1.4fr 1.4fr 1.4fr 0.3fr;
+    grid-template-rows: 0.2fr 1.8fr 1.8fr 0.2fr 0.8fr;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". . tituloPlacas tituloPlacas . ."
+        ". cardPlacas1 cardPlacas2 cardPlacas3 cardPlacas4 ."
+        ". cardPlacas5 cardPlacas6 cardPlacas7 cardPlacas8 ."
+        ". . titulo2 titulo2 . ."
+        ". promo1 promo1 promo2 promo2 .";
+    grid-area: mainPlacas;
+}
+.tituloPlacas { 
+    grid-area: tituloPlacas;
+    color: rgb(48, 221, 48);
+    text-align: center;
+    font-size: 20px;
+}
+.cardPlacas1 { 
+    grid-area: cardPlacas1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cardPlacas2 { 
+    grid-area: cardPlacas2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cardPlacas3 { 
+    grid-area: cardPlacas3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cardPlacas4 { 
+    grid-area: cardPlacas4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cardPlacas5 { 
+    grid-area: cardPlacas5; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cardPlacas6 { 
+    grid-area: cardPlacas6; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cardPlacas7 { 
+    grid-area: cardPlacas7; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cardPlacas8 { 
+    grid-area: cardPlacas8; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo2 { 
+    grid-area: titulo2; 
+    color: rgb(48, 221, 48);
+    text-align: center;
+    font-size: 20px;
+}
+.promo1 { 
+    grid-area: promo1;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.imgPromo{
+    max-width: 100%;
+    height: 140px;
+    width: 350px;
+}
+.fraseDesc{
+    position: absolute;
+    top: -10px;
+    left: 165px;
+    color: white;
+}
+.promo2 { 
+    grid-area: promo2;
+    position: relative;
+    display: inline-block;
+    text-align: center; 
+}
+.footerPlacas { 
+    grid-area: footerPlacas;
+    color: black;
+    font-size: 20px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+    background-color: #f4f4f4;
+    border-top: 1px solid rgb(206, 206, 206);
+    border-bottom: 1px solid rgb(206, 206, 206);
+}
