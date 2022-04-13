@@ -22,16 +22,18 @@
     margin-bottom: 0px;
     height: 10%;
     font-size: 18px;
+    font-weight: bold;
 }
 .padreMenu{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
+    background-image: linear-gradient(to right, white, rgb(77, 77, 202), blue);
 }
 .linksMenu{
     text-decoration: none;
-    color: black;
+    color: white;
     margin-left: 25px;
 }
 .Main {
