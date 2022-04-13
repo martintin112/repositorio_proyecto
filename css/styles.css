@@ -14,7 +14,7 @@
     background-color: white;
 }
 .NavBar { grid-area: NavBar; }
-.MenuPrincipal{
+.MenuInicio{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
