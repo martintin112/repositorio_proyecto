@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./Imagenes rigs/btc logo.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Placas de Video</title>
 </head>
@@ -12,75 +13,99 @@
     <div class="gridContenedorPlacas">
         <div class="NavBarPlacas">
             <header>
-                <nav class="padreMenu">
-                    <img src="./Imagenes rigs/btc logo.jpg" alt="">
-                    <ul class="MenuInicio">
-                        <li><a class= "linksMenu" href="./index.html">Inicio</a></li>
-                        <li><a class= "linksMenu" href="./placasdevid.html">Placas de video</a></li>
-                        <li><a class= "linksMenu" href="./rigs.html">Rigs</a></li>
-                        <li><a class= "linksMenu" href="./otrosproductos.html">Otros Productos</a></li>
-                        <li><a class= "linksMenu" href="./contacto.html">Contacto</a></li>
-                    </ul>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid padreMenu">
+                        <a class="navbar-brand" href="./index.html">
+                            <img src="./Imagenes rigs/btc logo.jpg" alt="" >
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav" class="MenuInicio">
+                                <li class="nav-item" ><a class="nav-link" aria-current="page" class= "linksMenu" href="./index.html">Inicio</a></li>
+                                <li class="nav-item" ><a class="nav-link active" aria-current="page" class= "linksMenu" href="./placasdevid.html">Placas de video</a></li>
+                                <li class="nav-item" ><a class="nav-link" aria-current="page" class= "linksMenu" href="./rigs.html">Rigs</a></li>
+                                <li class="nav-item" ><a class="nav-link" aria-current="page" class= "linksMenu" href="./otrosproductos.html">Otros Productos</a></li>
+                                <li class="nav-item" ><a class="nav-link" aria-current="page" class= "linksMenu" href="./contacto.html">Contacto</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </nav>
             </header>
         </div>
         <div class="mainPlacas">
             <div class="tituloPlacas"><h1>Placas de Video</h1></div>
-            <div class="cardPlacas1">
+            <!-- <div class="cardPlacas1">
                 <img class="imgCard" src="./Imagenes rigs/3080ti.jpg" alt="RTX 3080ti" title="GPU RTX 3080ti">
                 <p class="DescripcionPlacas">Placa de Video Asus RTX 3080Ti</p>
                 <form class="BotonConsultar" action="./contacto.html">
                     <button type="submit">Consultar Precio</button>
                 </form>
-        </div>
-            <div class="cardPlacas2">
-                <img class="imgCard" src="./Imagenes rigs/3090.jpg" alt="RTX 3090" title="GPU RTX 3090">
-                <p class="DescripcionPlacas">Placa de Video EVGA RTX 3090</p>
-                <form class="BotonConsultar" action="./contacto.html">
-                    <button type="submit">Consultar Precio</button>
-                </form>
+            </div> -->
+            <div class="card cardPlacas1" style="width: 18rem;">
+                <img src="./Imagenes rigs/3080ti.jpg" class="card-img-top" alt="RTX 3080ti" title="GPU RTX 3080ti">
+                <div class="card-body">
+                    <p class="card-title tituloCard">RTX 3080TI</p>
+                    <p class="card-text">Placa de Video Asus TUF Gaming NVIDIA GeForce RTX 3080TI 12GB</p>
+                    <a href="./contacto.html" class="btn btn-primary">Consultar Aqui</a>
+                </div>
             </div>
-            <div class="cardPlacas3">
-                <img class="imgCard" src="./Imagenes rigs/6600xt.jpg" alt="RX 6600XT" title="GPU RX 6600XT">
-                <p class="DescripcionPlacas">Placa de Video MSI Raderon RX 6600XT</p>
-                <form class="BotonConsultar" action="./contacto.html">
-                    <button type="submit">Consultar Precio</button>
-                </form>
+            <div class="card cardPlacas2" style="width: 18rem;">
+                <img src="./Imagenes rigs/3090.jpg" class="card-img-top" alt="RTX 3090" title="GPU RTX 3090">
+                <div class="card-body">
+                    <p class="card-title tituloCard">RTX 3090</p>
+                    <p class="card-text">Placa de Video EVGA NVIDIA GeForce RTX 3090 24GB</p>
+                    <a href="./contacto.html" class="btn btn-primary">Consultar Aqui</a>
+                </div>
             </div>
-            <div class="cardPlacas4">
-                <img class="imgCard" src="./Imagenes rigs/1660ti.jpg" alt="GTX 1660ti" title="GPU GTX 1660ti">
-                <p class="DescripcionPlacas">Placa de Video MSI Geforce GTX 1660Ti</p>
-                <form class="BotonConsultar" action="./contacto.html">
-                    <button type="submit">Consultar Precio</button>
-                </form>
+            <div class="card cardPlacas3" style="width: 18rem;">
+                <img src="./Imagenes rigs/6600xt.jpg" class="card-img-top" alt="RX 6600XT" title="GPU RX 6600XT">
+                <div class="card-body">
+                    <p class="card-title tituloCard">RX 6600XT</p>
+                    <p class="card-text">Placa de Video MSI AMD Radeon Mechx2 RX6600XT 8GB</p>
+                    <a href="./contacto.html" class="btn btn-primary">Consultar Aqui</a>
+                </div>
             </div>
-            <div class="cardPlacas5">
-                <img class="imgCard" src="./Imagenes rigs/5500xt.jpg" alt="RX 5500XT" title="GPU RX 5500XT">
-                <p class="DescripcionPlacas">Placa de Video Gigabyte Radeon RX 5500XT</p>
-                <form class="BotonConsultar" action="./contacto.html">
-                    <button type="submit">Consultar Precio</button>
-                </form>
+            <div class="card cardPlacas4" style="width: 18rem;">
+                <img src="./Imagenes rigs/1660ti.jpg" class="card-img-top" alt="GTX 1660ti" title="GPU GTX 1660ti">
+                <div class="card-body">
+                    <p class="card-title tituloCard">GTX 1660TI</p>
+                    <p class="card-text">Placa de Video MSI GaminX NVIDIA GeForce GTX 1660TI 6GB</p>
+                    <a href="./contacto.html" class="btn btn-primary">Consultar Aqui</a>
+                </div>
             </div>
-            <div class="cardPlacas6">
-                <img class="imgCard" src="./Imagenes rigs/rx580.jpg" alt="RX 580" title="GPU RX 580 8GB">
-                <p class="DescripcionPlacas">Placa de Video AFOX Radeon RX 580 8GB</p>
-                <form class="BotonConsultar" action="./contacto.html">
-                    <button type="submit">Consultar Precio</button>
-                </form>
+            <div class="card cardPlacas5" style="width: 18rem;">
+                <img src="./Imagenes rigs/5500xt.jpg" class="card-img-top" alt="RX 5500XT" title="GPU RX 5500XT">
+                <div class="card-body">
+                    <p class="card-title tituloCard">RX 5500XT</p>
+                    <p class="card-text">Placa de Video Gigabyte AMD Radeon RX 5500XT 8GB</p>
+                    <a href="./contacto.html" class="btn btn-primary">Consultar Aqui</a>
+                </div>
             </div>
-            <div class="cardPlacas7">
-                <img class="imgCard" src="./Imagenes rigs/2060.jpg" alt="RTX 2060" title="GPU RTX 2060 6GB">
-                <p class="DescripcionPlacas">Placa de Video Gigabyte Geforce RTX 2060 6GB</p>
-                <form class="BotonConsultar" action="./contacto.html">
-                    <button type="submit">Consultar Precio</button>
-                </form>
+            <div class="card cardPlacas6" style="width: 18rem;">
+                <img src="./Imagenes rigs/rx580.jpg" class="card-img-top" alt="RX 580" title="GPU RX 580 8GB">
+                <div class="card-body">
+                    <p class="card-title tituloCard">RX 580</p>
+                    <p class="card-text">Placa de Video AFOX AMD Radeon RX 580 8GBGB</p>
+                    <a href="./contacto.html" class="btn btn-primary">Consultar Aqui</a>
+                </div>
             </div>
-            <div class="cardPlacas8">
-                <img class="imgCard" src="./Imagenes rigs/6900xt.png" alt="RX 6900XT" title="GPU RX 6900XT">
-                <p class="DescripcionPlacas">Placa de Video MSI Radeon RX 6900XT</p>
-                <form class="BotonConsultar" action="./contacto.html">
-                    <button type="submit">Consultar Precio</button>
-                </form>
+            <div class="card cardPlacas7" style="width: 18rem;">
+                <img src="./Imagenes rigs/2060.jpg" class="card-img-top" alt="RTX 2060" title="GPU RTX 2060 6GB">
+                <div class="card-body">
+                    <p class="card-title tituloCard">RTX 2060</p>
+                    <p class="card-text">Placa de Video Gigabyte NVIDIA GeForce RTX 2060 6GB</p>
+                    <a href="./contacto.html" class="btn btn-primary">Consultar Aqui</a>
+                </div>
+            </div>
+            <div class="card cardPlacas8" style="width: 18rem;">
+                <img src="./Imagenes rigs/6900xt.png" class="card-img-top" alt="RX 6900XT" title="GPU RX 6900XT">
+                <div class="card-body">
+                    <p class="card-title tituloCard">RX 6900XT</p>
+                    <p class="card-text">Placa de Video MSI GamingTrio AMD Radeon RX 6900XT 16GB</p>
+                    <a href="./contacto.html" class="btn btn-primary">Consultar Aqui</a>
+                </div>
             </div>
             <div class="titulo2"><h2>Ofertas</h2></div>
             <div class="promo1">
@@ -104,12 +129,12 @@
                 <img class="logoFace" src="./imagenes rigs/logo face2.png" alt="">
                 <img class="logoInsta" src="./imagenes rigs/logo insta2.jpg" alt="">
                 </div>
-                <ul class="menuSecundario">
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li>Preguntas Frec.</li>
-                    <li>Medios de Pago</li>
-                    <li>Condiciones de Garantia</li>
-                    <li>Politica de Privacidad</li>
+                <ul class="nav flex-column" class="menuSecundario">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Preguntas Frec.</a></li>
+                    <li class="nav-item"><a class="nav-link" href=""> Medios de Pago</a></li>
+                    <li class="nav-item"><a class="nav-link" href=""> Condiciones de Garantia</a></li>
+                    <li class="nav-item"><a class="nav-link" href=""> Politica de Privacidad</a></li>
                 </ul>
             </div>
             <div class="subscribite">
@@ -119,5 +144,6 @@
             </div>
         </div>
     </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./Imagenes rigs/btc logo.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <title>Home Page</title>
 </head>
@@ -12,41 +13,53 @@
     <div class="gridContenedor">      
         <div class="NavBar">
             <header>
-                <nav class="padreMenu">
-                    <img src="./Imagenes rigs/btc logo.jpg" alt="">
-                    <ul class="MenuInicio">
-                        <li><a class= "linksMenu" href="./index.html">Inicio</a></li>
-                        <li><a class= "linksMenu" href="./placasdevid.html">Placas de video</a></li>
-                        <li><a class= "linksMenu" href="./rigs.html">Rigs</a></li>
-                        <li><a class= "linksMenu" href="./otrosproductos.html">Otros Productos</a></li>
-                        <li><a class= "linksMenu" href="./contacto.html">Contacto</a></li>
-                    </ul>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid padreMenu">
+                        <a class="navbar-brand" href="./index.html">
+                            <img src="./Imagenes rigs/btc logo.jpg" alt="" >
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav" class="MenuInicio">
+                                <li class="nav-item" ><a class="nav-link active" aria-current="page" class= "linksMenu" href="./index.html">Inicio</a></li>
+                                <li class="nav-item" ><a class="nav-link" aria-current="page" class= "linksMenu" href="./placasdevid.html">Placas de video</a></li>
+                                <li class="nav-item" ><a class="nav-link" aria-current="page" class= "linksMenu" href="./rigs.html">Rigs</a></li>
+                                <li class="nav-item" ><a class="nav-link" aria-current="page" class= "linksMenu" href="./otrosproductos.html">Otros Productos</a></li>
+                                <li class="nav-item" ><a class="nav-link" aria-current="page" class= "linksMenu" href="./contacto.html">Contacto</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </nav>
             </header>
         </div>
         
         <div class="Main">
             <div class="Titulo"><h1 class="TitProductos TamañoTitulos">Productos</h1></div>
-            <div class="card1">
-                <img class="imgCard" src="./Imagenes rigs/rigs1.jpg" alt="Rig RTX 3080" title="Rig armado con placas RTX 3080" id="RTX3080">
-                <p class="DescripcionProd">Rig Minero X6 RTX 3080</p>  
-                <form class="BotonConsultar" action="./contacto.html">
-                    <button class="botonConsultar" type="submit">Consultar Precio</button>
-                </form>
+            <div class="card card1">
+                <img src="./Imagenes rigs/rigs1.jpg" class="card-img-top" alt="Rig RTX 3080" title="Rig armado con placas RTX 3080" id="RTX3080">
+                <div class="card-body">
+                    <p class="card-title tituloCard">RIG 3080</p>
+                    <p class="card-text">Rig de Mineria para Criptomonedas NVIDIA GeForce RTX 3080 X6</p>
+                    <a href="./contacto.html" class="btn btn-primary">Consultar Aqui</a>
+                </div>
             </div>
-            <div class="card2">
-                <img class="imgCard" src="./Imagenes rigs/1660ti.jpg" alt="GTX 1660ti" title="Placa de video GTX 1660ti">
-                <p class="DescripcionProd">Placa de Video MSI GTX 1660Ti</p>
-                <form class="BotonConsultar" action="./contacto.html">
-                    <button class="botonConsultar" type="submit">Consultar Precio</button>
-                </form>
+            <div class="card card2">
+                <img src="./Imagenes rigs/1660ti.jpg" class="card-img-top" alt="GTX 1660ti" title="GPU GTX 1660ti">
+                <div class="card-body">
+                    <p class="card-title tituloCard">GTX 1660TI</p>
+                    <p class="card-text">Placa de Video MSI GaminX NVIDIA GeForce GTX 1660TI 6GB</p>
+                    <a href="./contacto.html" class="btn btn-primary">Consultar Aqui</a>
+                </div>
             </div>
-            <div class="card3">
-                <img class="imgCard" src="./Imagenes rigs/granja.jpg" alt="Granja de Rigs" title="Esto es una granja de rigs">
-                <p class="DescripcionProd">Granja de Rigs construida por nosotros</p>
-                <form class="BotonConsultar" action="./contacto.html">
-                    <button class="botonConsultar" type="submit">Consultar Precio</button>
-                </form>    
+            <div class="card card3">
+                <img src="./Imagenes rigs/granja.jpg" class="card-img-top" alt="Granja de Rigs" title="Esto es una granja de rigs">
+                <div class="card-body">
+                    <p class="card-title tituloCard">Granja Rigs</p>
+                    <p class="card-text">Granja de Rigs construida por nosotros y con su respectivo mantenimiento</p>
+                    <a href="./contacto.html" class="btn btn-primary">Consultar Aqui</a>
+                </div> 
             </div>
             <div class="Titulo2"><h2 class="TitInformacion TamañoTitulos">Informacion</h2></div>
             <div class="info1"><p class="DescripcionInfo">Ganancias en USD sin que tengas que moverte ni preocuparte por el mantenimiento.</p></div>
@@ -65,12 +78,12 @@
                     <img class="logoFace" src="./imagenes rigs/logo face2.png" alt="">
                     <img class="logoInsta" src="./imagenes rigs/logo insta2.jpg" alt="">
                     </div>
-                    <ul class="menuSecundario">
-                        <li><a href="./index.html">Inicio</a></li>
-                        <li>Preguntas Frec.</li>
-                        <li>Medios de Pago</li>
-                        <li>Condiciones de Garantia</li>
-                        <li>Politica de Privacidad</li>
+                    <ul class="nav flex-column" class="menuSecundario">
+                        <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Preguntas Frec.</a></li>
+                        <li class="nav-item"><a class="nav-link" href=""> Medios de Pago</a></li>
+                        <li class="nav-item"><a class="nav-link" href=""> Condiciones de Garantia</a></li>
+                        <li class="nav-item"><a class="nav-link" href=""> Politica de Privacidad</a></li>
                     </ul>
                 </div>
                 <div class="subscribite">
@@ -80,5 +93,6 @@
                 </div>
         </div>
     </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
