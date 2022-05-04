@@ -43,9 +43,9 @@
   justify-content: center;
   align-items: center;
   background-color: #f4f4f4;
-  height: 100px; }
+  height: 99px; }
 
-.TitProductos {
+.TitProductos, .tituloSeccionPlacas, .tituloRigs, .tituloContacto {
   font-size: 35px;
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: bold; }
@@ -55,10 +55,6 @@
   display: flex;
   flex-direction: column;
   align-items: center; }
-
-.imgCard {
-  border-radius: 10px;
-  max-width: 100%; }
 
 .card2 {
   grid-area: card2;
@@ -72,24 +68,15 @@
   flex-direction: column;
   align-items: center; }
 
-.botonConsultar {
-  background-color: blue;
-  border-radius: 5px;
-  color: whitesmoke;
-  font-weight: bold;
-  text-align: center;
-  border: 0px;
-  width: 100px; }
-
 .TituloInformacion {
   grid-area: Titulo2;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #f4f4f4;
-  height: 100px; }
+  height: 99px; }
 
-.TitInformacion {
+.TitInformacion, .tituloOfertas {
   font-size: 30px;
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: bold; }
@@ -208,11 +195,6 @@
   background-color: #f4f4f4;
   height: 99px; }
 
-.tituloSeccionPlacas {
-  font-size: 35px;
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: bold; }
-
 .tituloCard {
   font-size: 1.25rem;
   font-weight: 500;
@@ -280,12 +262,8 @@
   justify-content: center;
   align-items: center;
   background-color: #f4f4f4;
-  height: 100px; }
-
-.tituloOfertas {
-  font-size: 30px;
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: bold; }
+  height: 99px;
+  margin-top: 25px; }
 
 .promo1 {
   grid-area: promo1;
@@ -314,6 +292,29 @@
   grid-area: footerPlacas; }
 
 /* FIN SECCION PLACAS */
+/* SECCION RIGS */
+.seccionTituloRigs {
+  display: flex;
+  background-color: #f4f4f4;
+  height: 99px;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+
+.contenedorCards {
+  margin-top: 0px; }
+
+.card-img {
+  border-bottom: 1px solid #cecece; }
+
+.promos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 25px; }
+
+/*FIN SECCION RIGS */
 /* SECCION CONTACTOS */
 .fondoNav {
   background-color: gainsboro; }
@@ -321,16 +322,11 @@
 .seccionTitulo {
   display: flex;
   background-color: #f4f4f4;
-  height: 100px;
+  height: 99px;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
   text-align: center; }
-
-.tituloContacto {
-  font-size: 35px;
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: bold; }
 
 .mapa {
   max-width: 100%; }
@@ -344,3 +340,5 @@
 
 .division {
   border-top: 1px solid #cecece; }
+
+/*FIN SECCION CONTACTOS */

@@ -1,0 +1,3 @@
+Aplique meta keywords en cada seccion, con palabras claves unicas y algunas reutiizadas.
+Aplique meta description tambien unica en cada seccion, con una descripcion breve del contenido.
+Utilice las etiquetas title resumido y conciso para cada una de las secciones.

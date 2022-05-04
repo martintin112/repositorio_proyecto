@@ -3,8 +3,12 @@
     padding: 0;
     ;
 }
+@import "./utilidades/mixins";
 @import "./utilidades/variables.scss";
-// @import "./utilidades/mixins.scss)";
+$estilossecciontitulo: (
+    fondo: #f4f4f4,
+    alto: 99px,
+);
 .gridContenedor {
     display: grid;
     grid-template-columns: 0.2fr 1fr 1fr 1fr 0.2fr; 
@@ -52,8 +56,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f4f4f4;
-    height: 100px;
+    background-color: map-get($estilossecciontitulo,fondo );
+    height: map-get($estilossecciontitulo,alto );
 }
 .TitProductos{
     font-size: 35px;
@@ -62,42 +66,23 @@
 }
 .card1 { 
     grid-area: card1; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-column-center;
 }
-.imgCard{
-    border-radius: 10px;
-    max-width: 100%;
-} 
 .card2 { 
     grid-area: card2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-column-center;
 }
 .card3 { 
     grid-area: card3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.botonConsultar{
-    background-color: blue;
-    border-radius: 5px;
-    color: whitesmoke;
-    font-weight: bold;
-    text-align: center;
-    border: 0px;
-    width: 100px;
+    @include flex-column-center;
 }
 .TituloInformacion { 
     grid-area: Titulo2;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f4f4f4;
-    height: 100px;
+    background-color: map-get($estilossecciontitulo,fondo );
+    height: map-get($estilossecciontitulo,alto );
 }
 .TitInformacion{
     font-size: 30px;
@@ -219,13 +204,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f4f4f4;
-    height: 99px;
+    background-color: map-get($estilossecciontitulo,fondo );
+    height: map-get($estilossecciontitulo,alto );
 }
 .tituloSeccionPlacas{
-    font-size: 35px;
-    font-family: $fuente-titulos;
-    font-weight: bold;
+    @extend .TitProductos;
 }
 .tituloCard{
     font-size: 1.25rem;
@@ -235,71 +218,54 @@
 .cardPlacas1 { 
     margin-left: 7%;
     grid-area: cardPlacas1; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-column-center;
 }
 .cardPlacas2 { 
     margin-left: 7%;
     grid-area: cardPlacas2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-column-center;
 }
 .cardPlacas3 { 
     margin-left: 7%;
     grid-area: cardPlacas3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-column-center;
 }
 .cardPlacas4 { 
     margin-left: 7%;
     grid-area: cardPlacas4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-column-center;
 }
 .cardPlacas5 { 
     margin-left: 7%;
     grid-area: cardPlacas5; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-column-center;
 }
 .cardPlacas6 { 
     margin-left: 7%;
     grid-area: cardPlacas6; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-column-center;
 }
 .cardPlacas7 { 
     margin-left: 7%;
     grid-area: cardPlacas7; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-column-center;
 }
 .cardPlacas8 { 
     margin-left: 7%;
     grid-area: cardPlacas8; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-column-center;
 }
 .tituloOf { 
     grid-area: titulo2; 
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f4f4f4;
-    height: 100px;
+    background-color: map-get($estilossecciontitulo,fondo );
+    height: map-get($estilossecciontitulo,alto );
+    margin-top: 25px;
 }
 .tituloOfertas{
-    font-size: 30px;
-    font-family: $fuente-titulos;
-    font-weight: bold;
+    @extend .TitInformacion;
 }
 .promo1 { 
     grid-area: promo1;
@@ -329,23 +295,48 @@
 }
 /* FIN SECCION PLACAS */
 
+/* SECCION RIGS */
+.seccionTituloRigs{
+    display: flex;
+    background-color: map-get($estilossecciontitulo,fondo );
+    height: map-get($estilossecciontitulo,alto );
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.tituloRigs{
+    @extend .TitProductos;
+}
+.contenedorCards{
+    margin-top: 0px;
+}
+.card-img{
+    border-bottom: $bordes;
+}
+.promos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+/*FIN SECCION RIGS */
+
 /* SECCION CONTACTOS */
 .fondoNav{
     background-color: gainsboro;
 }
 .seccionTitulo{
     display: flex;
-    background-color: #f4f4f4;
-    height: 100px;
+    background-color: map-get($estilossecciontitulo,fondo );
+    height: map-get($estilossecciontitulo,alto );
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
     text-align: center;
 }
 .tituloContacto{
-    font-size: 35px;
-    font-family: $fuente-titulos;
-    font-weight: bold;
+    @extend .TitProductos;
 }
 .mapa{
     max-width: 100%;
@@ -360,3 +351,4 @@
 .division{
     border-top: $bordes;
 }
+/*FIN SECCION CONTACTOS */
