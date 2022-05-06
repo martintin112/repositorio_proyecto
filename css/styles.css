@@ -45,7 +45,7 @@
   background-color: #f4f4f4;
   height: 99px; }
 
-.TitProductos, .tituloSeccionPlacas, .tituloRigs, .tituloContacto {
+.TitProductos, .tituloSeccionPlacas, .tituloRigs, .tituloOtrosProd, .tituloContacto {
   font-size: 35px;
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: bold; }
@@ -188,70 +188,21 @@
   grid-area: mainPlacas; }
 
 .tituloPlacas {
-  grid-area: tituloPlacas;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #f4f4f4;
-  height: 99px; }
+  height: 99px;
+  text-align: center; }
 
 .tituloCard {
   font-size: 1.25rem;
   font-weight: 500;
   line-height: 1.2; }
 
-.cardPlacas1 {
-  margin-left: 7%;
+.cardPlacas {
+  margin-left: 10%;
   grid-area: cardPlacas1;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.cardPlacas2 {
-  margin-left: 7%;
-  grid-area: cardPlacas2;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.cardPlacas3 {
-  margin-left: 7%;
-  grid-area: cardPlacas3;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.cardPlacas4 {
-  margin-left: 7%;
-  grid-area: cardPlacas4;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.cardPlacas5 {
-  margin-left: 7%;
-  grid-area: cardPlacas5;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.cardPlacas6 {
-  margin-left: 7%;
-  grid-area: cardPlacas6;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.cardPlacas7 {
-  margin-left: 7%;
-  grid-area: cardPlacas7;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.cardPlacas8 {
-  margin-left: 7%;
-  grid-area: cardPlacas8;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -276,12 +227,6 @@
   height: 140px;
   width: 350px; }
 
-.fraseDesc {
-  position: absolute;
-  top: -10px;
-  left: 165px;
-  color: white; }
-
 .promo2 {
   grid-area: promo2;
   position: relative;
@@ -304,6 +249,12 @@
 .contenedorCards {
   margin-top: 0px; }
 
+.cardRigs {
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
 .card-img {
   border-bottom: 1px solid #cecece; }
 
@@ -314,7 +265,33 @@
   flex-wrap: wrap;
   margin-top: 25px; }
 
+.tipoPromo {
+  text-align: center;
+  font-size: 25px;
+  width: 100px;
+  margin-left: 120px;
+  background-color: #00000080;
+  border-radius: 10px;
+  border: 2px solid #000000;
+  color: white; }
+
 /*FIN SECCION RIGS */
+/* SECCION OTROS PRODUCTOS */
+.seccionTituloProd {
+  display: flex;
+  background-color: #f4f4f4;
+  height: 99px;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+
+.cardOtrosProd {
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+/*FIN SECCION OTROS PRODUCTOS */
 /* SECCION CONTACTOS */
 .fondoNav {
   background-color: gainsboro; }
@@ -342,3 +319,6 @@
   border-top: 1px solid #cecece; }
 
 /*FIN SECCION CONTACTOS */
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .Main {
+    grid-template-columns: repeat(1, 4fr); } }
