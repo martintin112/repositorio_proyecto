@@ -9,26 +9,8 @@ $estilossecciontitulo: (
     fondo: #f4f4f4,
     alto: 99px,
 );
-.gridContenedor {
-    display: grid;
-    grid-template-columns: 0.2fr 1fr 1fr 1fr 0.2fr; 
-    grid-template-rows: 0.1fr 2.4fr 0.3fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-    "NavBar NavBar NavBar NavBar NavBar"
-    "Main Main Main Main Main"
-    "Footer Footer Footer Footer Footer"; 
-    background-color: white;
-}
-.NavBar { 
-    grid-area: NavBar;
-    padding-left: 0px;
-    padding-right: 0px;
-}
-.MenuInicio{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.fondoNav{
+    background-color: gainsboro;
 }
 .padreMenu{
     display: flex;
@@ -36,33 +18,38 @@ $estilossecciontitulo: (
     justify-content: space-between;
     align-content: center;
 }
-.Main {
-    display: grid; 
-    grid-template-columns:0.2fr 1fr 1fr 1fr 0.2fr; 
-    grid-template-rows: 0.2fr 3.5fr 0.2fr 1.8fr; 
-    gap: 0px 5px; 
-    grid-template-areas: 
-    "Titulo Titulo Titulo Titulo Titulo"
-    ". card1 card2 card3 ."
-    "Titulo2 Titulo2 Titulo2 Titulo2 Titulo2"
-    ". info1 info2 info3 ."; 
-    grid-area: Main;
-    justify-content: center;
-    background-repeat: repeat-y;
-    background-size: auto;
+.MenuInicio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
-.Titulo { 
-    grid-area: Titulo; 
+.nav-link{
+    color: black;
+}
+.titulo { 
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: map-get($estilossecciontitulo,fondo );
     height: map-get($estilossecciontitulo,alto );
+    margin-bottom: 20px;
+    margin-top: 0px;
 }
-.TitProductos{
+.titProductos{
     font-size: 35px;
     font-family: $fuente-titulos;
     font-weight: bold;
+}
+.seccionCard {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "card1 card2 card3";
+    grid-area: seccionCard;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 .card1 { 
     grid-area: card1; 
@@ -76,18 +63,36 @@ $estilossecciontitulo: (
     grid-area: card3;
     @include flex-column-center;
 }
-.TituloInformacion { 
-    grid-area: Titulo2;
+.tituloCard{
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.tituloInformacion { 
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: map-get($estilossecciontitulo,fondo );
     height: map-get($estilossecciontitulo,alto );
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-.TitInformacion{
+.titInformacion{
     font-size: 30px;
     font-family: $fuente-titulos;
     font-weight: bold;
+}
+.seccionInformacion {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "info1 info2 info3";
+    grid-area: seccionInformacion;
+    margin-right: 40px;
+    margin-left: 40px;
+    height: 250px;
 }
 .info1 { 
     grid-area: info1;
@@ -102,6 +107,7 @@ $estilossecciontitulo: (
     text-align: center;
     background-image: url(https://cherry-brightspot.s3.amazonaws.com/6f/bf/27e435f74c7e8fe74b52cc4b464f/istock-886004314.jpg);
     background-size: cover;
+    height: 250px;
 }
 .info2 { 
     grid-area: info2;
@@ -116,6 +122,7 @@ $estilossecciontitulo: (
     text-align: center;
     background-image: url(https://fotos.perfil.com/2021/02/10/trim/950/534/bitcoins-criptomonedas-20210210-1125945.jpg);
     background-size: cover;
+    height: 250px;
 }
 .info3 { 
     grid-area: info3;
@@ -130,9 +137,17 @@ $estilossecciontitulo: (
     text-align: center;
     background-image: url(https://pysnnoticias.com/wp-content/uploads/2021/12/Mejores-criptomonedas-para-invertir-a-corto-plazo.jpg);
     background-size: cover;
+    height: 250px;
 }
-.Footer { 
-    grid-area: Footer;
+.footerContactos{
+    color: black;
+    font-size: 20px;
+    margin-top: 30px;
+    background-color: #f4f4f4;
+    border-bottom: $bordes; 
+}
+.division{
+    border-top: $bordes;
 }
 .imgLogo{
     height: 60px;
@@ -171,34 +186,7 @@ $estilossecciontitulo: (
     border-radius: 5px;
     font-size: 15px
 }
-.nav-link{
-    color: black;
-}
 /* SECCION PLACAS */
-.gridContenedorPlacas {  display: grid;
-    grid-template-columns: 0.2fr 1fr 1fr 1fr 0.2fr;
-    grid-template-rows: 0.3fr 2.5fr 0.2fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "NavBarPlacas NavBarPlacas NavBarPlacas NavBarPlacas NavBarPlacas"
-        "mainPlacas mainPlacas mainPlacas mainPlacas mainPlacas"
-        "footerPlacas footerPlacas footerPlacas footerPlacas footerPlacas";
-}
-.NavBarPlacas { grid-area: NavBarPlacas; }
-.mainPlacas {  display: grid;
-    grid-template-columns: 0.3fr 1.4fr 1.4fr 1.4fr 1.4fr 0.3fr;
-    grid-template-rows: 0.2fr 1.8fr 1.8fr 0.2fr 0.8fr;
-    gap: 5px 5px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "tituloPlacas tituloPlacas tituloPlacas tituloPlacas tituloPlacas tituloPlacas"
-        ". cardPlacas1 cardPlacas2 cardPlacas3 cardPlacas4 ."
-        ". cardPlacas5 cardPlacas6 cardPlacas7 cardPlacas8 ."
-        "titulo2 titulo2 titulo2 titulo2 titulo2 titulo2"
-        ". promo1 promo1 promo2 promo2 .";
-    grid-area: mainPlacas;
-}
 .tituloPlacas { 
     display: flex;
     justify-content: center;
@@ -208,17 +196,14 @@ $estilossecciontitulo: (
     text-align: center;
 }
 .tituloSeccionPlacas{
-    @extend .TitProductos;
-}
-.tituloCard{
-    font-size: 1.25rem;
-    font-weight: 500;
-    line-height: 1.2;
+    @extend .titProductos;
 }
 .cardPlacas { 
-    margin-left: 10%;
-    grid-area: cardPlacas1; 
+    margin-left: 10%; 
     @include flex-column-center;
+}
+.card-img{
+    border-bottom: $bordes;
 }
 .tituloOf { 
     grid-area: titulo2; 
@@ -230,27 +215,19 @@ $estilossecciontitulo: (
     margin-top: 25px;
 }
 .tituloOfertas{
-    @extend .TitInformacion;
+    @extend .titInformacion;
 }
-.promo1 { 
-    grid-area: promo1;
-    position: relative;
-    display: inline-block;
-    text-align: center;
+.promos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 25px;
 }
 .imgPromo{
     max-width: 100%;
     height: 140px;
     width: 350px;
-}
-.promo2 { 
-    grid-area: promo2;
-    position: relative;
-    display: inline-block;
-    text-align: center; 
-}
-.footerPlacas { 
-    grid-area: footerPlacas;
 }
 /* FIN SECCION PLACAS */
 
@@ -264,7 +241,7 @@ $estilossecciontitulo: (
     text-align: center;
 }
 .tituloRigs{
-    @extend .TitProductos;
+    @extend .titProductos;
 }
 .contenedorCards{
     margin-top: 0px;
@@ -273,16 +250,7 @@ $estilossecciontitulo: (
     margin-left: 10%;
     @include flex-column-center;
 }
-.card-img{
-    border-bottom: $bordes;
-}
-.promos{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 25px;
-}
+
 .tipoPromo{
     text-align: center;
     font-size: 25px;
@@ -305,7 +273,7 @@ $estilossecciontitulo: (
     text-align: center;
 }
 .tituloOtrosProd{
-    @extend .TitProductos;
+    @extend .titProductos;
 }
 .cardOtrosProd{
     margin-left: 10%;
@@ -314,9 +282,6 @@ $estilossecciontitulo: (
 /*FIN SECCION OTROS PRODUCTOS */
 
 /* SECCION CONTACTOS */
-.fondoNav{
-    background-color: gainsboro;
-}
 .seccionTitulo{
     display: flex;
     background-color: map-get($estilossecciontitulo,fondo );
@@ -327,24 +292,92 @@ $estilossecciontitulo: (
     text-align: center;
 }
 .tituloContacto{
-    @extend .TitProductos;
+    @extend .titProductos;
 }
 .mapa{
     max-width: 100%;
 }
-.footerContactos{
-    color: black;
-    font-size: 20px;
-    margin-top: 30px;
-    background-color: #f4f4f4;
-    border-bottom: $bordes; 
+.wsp{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 47px;
+    bottom: 30px;
+    right: 30px;
+    background-color: #0df053;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index: 100;
 }
-.division{
-    border-top: $bordes;
+.wsp:hover{
+    text-decoration: none;
+    color: #0df053;
+    background-color: white;
 }
 /*FIN SECCION CONTACTOS */
-@media (min-width: 768px) and (max-width: 1199.98px){
-    .Main{
-        grid-template-columns: repeat(1, 4fr);
+@media (max-width: 768px) {
+    .gridContenedorPlacas{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 0.1fr 1fr 0.1fr 1fr 0.5fr;
+        grid-template-areas:
+        "NavBarPlacas" 
+        "titulo"
+        "seccionCard" 
+        "tituloOf" 
+        "seccionInformacion"
+        "footer"; 
+    }
+    .seccionInformacion {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "info1" 
+        "info2" 
+        "info3";
+        height: 100%;
+    } 
+    .seccionCard{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "card1" 
+        "card2" 
+        "card3";
+        gap: 5px 0px;
+
+    }
+    .info1{
+        background-size: 100% 100%;
+    }
+    .info2{
+        background-size: 100% 130%;
+    }
+    .info3{
+        background-size: 100% 100%;
+    }
+}
+@media (min-width: 769px) {
+    .info1{
+        background-size: 100% 100%;
+    }
+    .info2{
+        background-size: 100% 100%;
+    }
+    .info3{
+        background-size: 100% 100%;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    .info1{
+        font-size: 20px;
+    }
+    .info2{
+        font-size: 20px;
+    }
+    .info3{
+        font-size: 20px;
     }
 }
