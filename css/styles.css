@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0; }
 
+/* SECCION NAVBAR */
 .fondoNav {
   background-color: gainsboro; }
 
@@ -19,6 +20,8 @@
 .nav-link {
   color: black; }
 
+/* FIN SECCION NAVBAR */
+/* SECCION INDEX */
 .titulo {
   display: flex;
   justify-content: center;
@@ -30,7 +33,7 @@
 
 .titProductos, .tituloSeccionPlacas, .tituloRigs, .tituloOtrosProd, .tituloContacto {
   font-size: 35px;
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Gugi", cursive;
   font-weight: bold; }
 
 .seccionCard {
@@ -65,7 +68,14 @@
 .tituloCard {
   font-size: 1.25rem;
   font-weight: 500;
-  line-height: 1.2; }
+  line-height: 1.2;
+  font-family: 'Open Sans', sans-serif; }
+
+.fontBoton {
+  font-family: 'Gugi', cursive; }
+
+.fondoBoton {
+  background-color: darkorange; }
 
 .tituloInformacion {
   display: flex;
@@ -78,7 +88,7 @@
 
 .titInformacion, .tituloOfertas {
   font-size: 30px;
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Gugi", cursive;
   font-weight: bold; }
 
 .seccionInformacion {
@@ -138,12 +148,15 @@
   background-size: cover;
   height: 250px; }
 
+/* FIN SECCION INDEX */
+/* SECCION FOOTER */
 .footerContactos {
   color: black;
   font-size: 20px;
   margin-top: 30px;
   background-color: #f4f4f4;
-  border-bottom: 1px solid #cecece; }
+  border-bottom: 1px solid #cecece;
+  font-family: 'Open Sans', sans-serif; }
 
 .division {
   border-top: 1px solid #cecece; }
@@ -177,14 +190,19 @@
   margin-top: 30px;
   height: 30px;
   width: 100px;
-  font-weight: bold;
   text-align: center;
   border: 0px;
-  background-color: #6c757d;
+  background-color: darkorange;
   color: whitesmoke;
   border-radius: 5px;
-  font-size: 15px; }
+  font-size: 15px;
+  border: 1px solid #6c757d;
+  font-family: 'Gugi', cursive; }
 
+.botonSubs:hover {
+  background-color: #495057; }
+
+/* FIN SECCION FOOTER */
 /* SECCION PLACAS */
 .tituloPlacas {
   display: flex;
@@ -304,6 +322,7 @@
   background-color: white; }
 
 /*FIN SECCION CONTACTOS */
+/* SECCION MEDIA QUERIES */
 @media (max-width: 768px) {
   .gridContenedorPlacas {
     grid-template-columns: 1fr;
@@ -341,3 +360,5 @@
     font-size: 20px; }
   .info3 {
     font-size: 20px; } }
+
+/* FIN SECCION MEDIA QUERIES */
