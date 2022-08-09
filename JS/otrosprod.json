@@ -1,0 +1,66 @@
+[
+    {
+        "id": 9,
+        "nombre": "Fuente Corsair RM850x GOLD, fuente totalmente modular",
+        "precio": 41000,
+        "imagen": "./Imagenes rigs/corsair850gold.jpg",
+        "altImg": "Corsair RM850x",
+        "titleImg": "Fuente Corsair 850x Gold"
+    },
+    {
+        "id": 10,
+        "nombre": "Cable divisor 24 pines para conectar 2 fuentes ATX a una PC",
+        "precio": 950,
+        "imagen": "./Imagenes rigs/cablefuente2a1.jpg",
+        "altImg": "Cable fuente 2a1",
+        "titleImg": "Cable 24pines para fuentes 2a1"
+    },
+    {
+        "id": 11,
+        "nombre": "Fuente EVGA 850 GQ, 80+ Gold Certified 850W, Semi Modular",
+        "precio": 35000,
+        "imagen": "./Imagenes rigs/evga850gold.jpg",
+        "altImg": "EVGA 850 GQ GOLD",
+        "titleImg": "Fuente EVGA 850GQ Gold 80+"
+    },
+    {
+        "id": 12,
+        "nombre": "Motherboard Asrock H510 Pro BTC+, 6 PCIe 3.0 x16",
+        "precio": 45000,
+        "imagen": "./Imagenes rigs/h510.jpg",
+        "altImg": "H510 Pro BTC+",
+        "titleImg": "Motherboard Asrock H510 Pro"
+    },
+    {
+        "id": 13,
+        "nombre": "Tarjeta expansora Riser para PCI Express 1x a 16x, ideal mineria",
+        "precio": 1700,
+        "imagen": "./Imagenes rigs/risers-1xa16x.jpg",
+        "altImg": "Riser 1x a 16x",
+        "titleImg": "Riser para PCI Express 1x a 16x"
+    },
+    {
+        "id": 14,
+        "nombre": "Cable Pcie Splitter Adaptador 8pines a 2x 6+2 Mineria",
+        "precio": 570,
+        "imagen": "./Imagenes rigs/spliters-8a6+2.png",
+        "altImg": "Cable Pcie Splitter",
+        "titleImg": "Splitter 8pines a 2x 6+2"
+    },
+    {
+        "id": 15,
+        "nombre": "Disco Solido SSD 240GB Kingston A400 SATA III",
+        "precio": 5500,
+        "imagen": "./Imagenes rigs/ssdkingston.jpg",
+        "altImg": "SSD Kingston 240GB",
+        "titleImg": "Disco Solido 240GB Kingston"
+    },
+    {
+        "id": 16,
+        "nombre": "Motherboard Asus Prime Z490-p Lga 1200 (intel 10th Gen)",
+        "precio": 55000,
+        "imagen": "./Imagenes rigs/z490.jpg",
+        "altImg": "Asus Prime Z490-p",
+        "titleImg": "Motherboard Asus Prime Z490-p"
+    }
+]

@@ -1,0 +1,67 @@
+[
+    {
+        "id": 1,
+        "nombre": "Placa de Video Asus TUF Gaming NVIDIA GeForce RTX 3080TI 12GB",
+        "precio": 247000,
+        "imagen": "./Imagenes rigs/3080ti.jpg",
+        "altImg": "RTX 3080ti",
+        "titleImg": "GPU RTX 3080ti",
+        "hijo": "cardPlacas"
+    },
+    {
+        "id": 2,
+        "nombre": "Placa de Video EVGA NVIDIA GeForce RTX 3090 24GB",
+        "precio": 285000,
+        "imagen": "./Imagenes rigs/3090.jpg",
+        "altImg": "RTX 3090",
+        "titleImg": "GPU RTX 3090"
+    },
+    {
+        "id": 3,
+        "nombre": "Placa de Video MSI AMD Radeon Mechx2 RX6600XT 8GB",
+        "precio": 88000,
+        "imagen": "./Imagenes rigs/6600xt.jpg",
+        "altImg": "RX 6600XT",
+        "titleImg": "GPU RX 6600XT"
+    },
+    {
+        "id": 4,
+        "nombre": "Placa de Video MSI GaminX NVIDIA GeForce GTX 1660TI 6GB",
+        "precio": 75000,
+        "imagen": "./Imagenes rigs/1660ti.jpg",
+        "altImg": "GTX 1660ti",
+        "titleImg": "GPU GTX 1660ti"
+    },
+    {
+        "id": 5,
+        "nombre": "Placa de Video Gigabyte AMD Radeon RX 5500XT 8GB",
+        "precio": 70000,
+        "imagen": "./Imagenes rigs/5500xt.jpg",
+        "altImg": "RX 5500XT",
+        "titleImg": "GPU RX 5500XT"
+    },
+    {
+        "id": 6,
+        "nombre": "Placa de Video AFOX AMD Radeon RX 580 8GBGB",
+        "precio": 60000,
+        "imagen": "./Imagenes rigs/rx580.jpg",
+        "altImg": "RX 580",
+        "titleImg": "GPU RX 580 8GB"
+    },
+    {
+        "id": 7,
+        "nombre": "Placa de Video Gigabyte NVIDIA GeForce RTX 2060 6GB",
+        "precio": 78000,
+        "imagen": "./Imagenes rigs/2060.jpg",
+        "altImg": "RTX 2060",
+        "titleImg": "GPU RTX 2060 6GB"
+    },
+    {
+        "id": 8,
+        "nombre": "Placa de Video MSI GamingTrio AMD Radeon RX 6900XT 16GB",
+        "precio": 240000,
+        "imagen": "./Imagenes rigs/6900xt.png",
+        "altImg": "RX 6900XT",
+        "titleImg": "GPU RX 6900XT"
+    }
+]

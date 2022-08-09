@@ -1,0 +1,66 @@
+[
+    {
+        "id": 17,
+        "nombre": "Presentamos este rig minero crypto de 6 placas de video RX 6900 XT",
+        "precio": 2000000,
+        "imagen": "./Imagenes rigs/rig-criptominero-amd-rx-6900-xt.png",
+        "altImg": "RIG AMD 6900XT",
+        "titleImg": "RIG MINERO 6900XT"
+    },
+    {
+        "id": 18,
+        "nombre": "Rig para Minería de Criptomonedas 6 GPU X RX 6800XT 16GB",
+        "precio": 1800000,
+        "imagen": "./Imagenes rigs/rig-minero-amd-6800.png",
+        "altImg": "RIG AMD 6800XT",
+        "titleImg": "RIG MINERO 6800XT"
+    },
+    {
+        "id": 19,
+        "nombre": "Presentamos este rig minero crypto de 4 placas de video RTX 3090",
+        "precio": 1500000,
+        "imagen": "./Imagenes rigs/Rig-criptomineria-4-RTX-3090.png",
+        "altImg": "RIG NVIDIA 3090",
+        "titleImg": "RIG MINERO RTX 3090"
+    },
+    {
+        "id": 20,
+        "nombre": "Rig para criptominería de 6 placas de video Nvidia Geforce RTX 3070",
+        "precio": 1300000,
+        "imagen": "./Imagenes rigs/rig-minero-criptomonedas-rtx3070.png",
+        "altImg": "RIG NVIDIA 3070",
+        "titleImg": "RIG MINERO RTX 3070"
+    },
+    {
+        "id": 21,
+        "nombre": "Presentamos este rig minero crypto de 6 placas de video RTX 2060 6GB",
+        "precio": 800000,
+        "imagen": "./Imagenes rigs/rig-criptominero-rtx-2060.png",
+        "altImg": "RIG NVIDIA 2060 6GB",
+        "titleImg": "RIG MINERO RTX 2060"
+    },
+    {
+        "id": 22,
+        "nombre": "Rig minero de criptomonedas de 6 placas de video AMD RX 5700XT",
+        "precio": 1900000,
+        "imagen": "./Imagenes rigs/Rig-mineria-criptomonedas-rtx-5700-xt.png",
+        "altImg": "RIG AMD 5700XT",
+        "titleImg": "RIG MINERO 5700XT"
+    },
+    {
+        "id": 23,
+        "nombre": "Presentamos este rig minero crypto de 6 placas de video GTX 1660S",
+        "precio": 600000,
+        "imagen": "./Imagenes rigs/rig-criptominero-gtx-1660-super.png",
+        "altImg": "RIG NVIDIA 1660-SUPER",
+        "titleImg": "RIG MINERO 1660-SUPER"
+    },
+    {
+        "id": 24,
+        "nombre": "Rig minero de criptomonedas de 6 placas de video NVIDIA RTX 3080",
+        "precio": 2000000,
+        "imagen": "./Imagenes rigs/rig-mineria-criptomonedas-rtx-3080.jpeg",
+        "altImg": "RIG NVIDIA 3080",
+        "titleImg": "RIG MINERO RTX 3080"
+    }
+]
